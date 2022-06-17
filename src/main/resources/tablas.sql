@@ -4,7 +4,7 @@ drop table if exists clientes;
 
 create table categorias(id_catg int primary key auto_increment,nombre varchar(45));
 
-create table clientes(id_Client int primary key auto_increment,nombre varchar(45), apellido varchar(45),forma_pago varchar(45));
+create table clientes(id int primary key auto_increment,nombre varchar(45), apellido varchar(45),forma_pago varchar(45));
 
 create table productos(id_prod int primary key auto_increment,TIPO_CAT INT, nombre varchar(75),
 precio int,fecha_ingreso date, sku varchar (10)  unique, CONSTRAINT FK_CATEG FOREIGN KEY (TIPO_CAT) REFERENCES CATEGORIAS (ID_CATG));

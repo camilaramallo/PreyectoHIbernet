@@ -9,7 +9,7 @@ public class JpaUtil {
     private static final EntityManagerFactory entityManagerFactory = builderEntityManagerFactory();
 
     private static EntityManagerFactory builderEntityManagerFactory(){
-        return Persistence.createEntityManagerFactory("proyectoHibernet");
+        return Persistence.createEntityManagerFactory("MySqlHibernet");
     }
 
     //crea y devuelve EntityManager por cada consulta o hilo // siempre va a usar  o devolver la misma intancia del "entityManagerFactory"
