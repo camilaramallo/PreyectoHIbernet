@@ -18,8 +18,8 @@ public class HibernateCrea {
 
             em.getTransaction().begin();//comienza la tranzaccion
             Cliente c = new Cliente();
-            c.setNombre("facundo");
-            c.setApellido("ramallo");
+            c.setNombre("Facundo");
+            c.setApellido("Ramallo");
             c.setFormaPago("efectivo");
             em.persist(c);//metodo persist guarda el objeto Entitie cliente
             em.getTransaction().commit();
